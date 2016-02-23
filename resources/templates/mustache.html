@@ -1,0 +1,28 @@
+Hashmap m = new Hashmap();
+m.put("name", user.name);
+m.put("messages", messages);
+
+
+<!--Basic Mustache-->
+String name =  "Bob";
+Hello, {{name}}!
+
+
+<!--Prints each element of the array(prints side-by side-->
+ArrayList<String> names;
+{{#names}}
+    {{.}}
+{{/names}}
+
+
+
+<!--Message is an object with text abd author fields-->
+ArrayList<Message> messages;
+{{#messages}}
+        {{text}} by {{author}}
+{{/messages}}
+
+
+boolean shouldDisplay = true;
+{{#shouldDisplay}}Only Prints This Text If True{{/shouldDisplay}}
+        {{^shouldDisplay}}Only Prints This Text If False{{/shouldDisplay}}

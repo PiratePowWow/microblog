@@ -41,7 +41,7 @@ public class Main {
             String name = request1.queryParams("name");
             String password = request1.queryParams("password");
             user = new User(name, password);
-            response1.redirect("/login");
+            response1.redirect("/");
             return "";
         }));
 
