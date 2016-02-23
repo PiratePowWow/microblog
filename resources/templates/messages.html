@@ -5,6 +5,9 @@
     <input type="text" placeholder="Enter your message" name="message"/>
     <button type="submit">Submit</button>
 </form>
+<form action="/logout" method="post">
+    <button type="submit">Logout</button>
+</form>
 <ol>
 {{#messages}}
 <li>{{.}}</li>
